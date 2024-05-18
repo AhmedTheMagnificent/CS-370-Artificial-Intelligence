@@ -49,7 +49,7 @@ The ASL Alphabet Dataset employed for this project can be accessed on Kaggle via
    - Extract and organize the dataset into a structured format, grouping images by letter gestures.
 
 2. **Preprocessing**
-   - Execute the `preprocessing.py` script to preprocess the dataset and extract hand landmarks.
+   - Execute the `processing.py` script to preprocess the dataset and extract hand landmarks.
    - Ensure the data is transformed into a suitable format for training and save it as `data.pickle`.
 
 3. **Training**
