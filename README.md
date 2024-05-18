@@ -1,14 +1,16 @@
-**American Sign Language Real-Time Detection**
+# American Sign Language Real-Time Detection
 
-**Description:**
+## Description
+
 This project aims to facilitate real-time detection of American Sign Language (ASL) gestures using computer vision techniques. ASL is a crucial mode of communication for individuals with hearing impairments, and automating its recognition can significantly improve accessibility. The dataset utilized in this project, available on Kaggle, consists of images capturing ASL gestures representing letters from A to Z. The primary objective is to develop a system capable of recognizing these gestures in real-time and mapping them to their corresponding English alphabet letters.
 
-**Dataset:**
+## Dataset
+
 The ASL Alphabet Dataset employed for this project can be accessed on Kaggle via the following link: [ASL Alphabet Dataset](https://www.kaggle.com/code/alfathterry/american-sign-language-real-time-detection). This dataset comprises images of ASL gestures for each letter of the alphabet, along with their respective labels.
 
-**Project Components:**
+## Project Components
 
-1. **Preprocessing:**
+1. **Preprocessing**
    - **Purpose:** The preprocessing stage involves preparing the dataset for training by extracting relevant features from the images.
    - **Script:** `preprocessing.py`
    - **Details:** 
@@ -19,7 +21,7 @@ The ASL Alphabet Dataset employed for this project can be accessed on Kaggle via
      - Transform the extracted data into a suitable format for machine learning.
      - Save the preprocessed data as `data.pickle` for subsequent training.
 
-2. **Training:**
+2. **Training**
    - **Purpose:** Train a machine learning model on the preprocessed data to recognize ASL gestures.
    - **Script:** `training.py`
    - **Details:**
@@ -29,7 +31,7 @@ The ASL Alphabet Dataset employed for this project can be accessed on Kaggle via
      - Train the model using the training data and evaluate its performance.
      - Save the trained model as `model.p` for real-time detection.
 
-3. **Real-Time Detection:**
+3. **Real-Time Detection**
    - **Purpose:** Develop a real-time ASL gesture recognition system using the trained model.
    - **Script:** `main.py`
    - **Details:**
@@ -40,26 +42,27 @@ The ASL Alphabet Dataset employed for this project can be accessed on Kaggle via
      - Utilize the trained model to predict the ASL gesture based on the detected hand landmarks.
      - Display the real-time video stream with overlaid predicted ASL gesture on the screen.
 
-**Usage:**
+## Usage
 
-1. **Dataset Preparation:**
+1. **Dataset Preparation**
    - Download the ASL Alphabet Dataset from Kaggle using the provided link.
    - Extract and organize the dataset into a structured format, grouping images by letter gestures.
 
-2. **Preprocessing:**
+2. **Preprocessing**
    - Execute the `preprocessing.py` script to preprocess the dataset and extract hand landmarks.
    - Ensure the data is transformed into a suitable format for training and save it as `data.pickle`.
 
-3. **Training:**
+3. **Training**
    - Run the `training.py` script to train the machine learning model on the preprocessed data.
    - Evaluate the model's performance and save it as `model.p` for real-time detection.
 
-4. **Real-Time Detection:**
+4. **Real-Time Detection**
    - Execute the `main.py` script to perform real-time ASL gesture detection using the trained model.
    - Ensure the webcam is accessible and properly configured to capture video frames.
    - Observe the real-time video stream with overlaid ASL gesture predictions for each detected hand gesture.
 
-**Dependencies:**
+## Dependencies
+
 - Python 3.x
 - OpenCV
 - MediaPipe
@@ -67,10 +70,10 @@ The ASL Alphabet Dataset employed for this project can be accessed on Kaggle via
 - scikit-learn
 - pickle
 
-**References:**
+## References
+
 - [ASL Alphabet Dataset on Kaggle](https://www.kaggle.com/code/alfathterry/american-sign-language-real-time-detection)
 - MediaPipe Library Documentation
 - scikit-learn Documentation
 
-**Note:**
-Adjust file paths, directory structures, and dependencies as required based on your local environment and setup. Ensure all necessary libraries are installed and configured correctly to run the scripts smoothly.
+**Note:** Adjust file paths, directory structures, and dependencies as required based on your local environment and setup. Ensure all necessary libraries are installed and configured correctly to run the scripts smoothly.
